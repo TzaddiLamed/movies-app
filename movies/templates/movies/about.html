@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+{% extends 'movies/_base.html' %}
+
+<body>
+    {% block content %}
+        <h1>Here are my fave movies:</h1>
+        <ul>
+            <li>The Matrix</li>
+            <li>The Exorcise</li>
+            <li>Penguin Movie</li>
+            <li>Reborn</li>
+            <li>The Destroyer</li>
+        </ul>
+        {% load static %}
+        <img src="{% static 'movies/me_demo.jpg' %}", alt="It's a MEEAA!">
+    {% endblock %}
+</body>
+</html>
